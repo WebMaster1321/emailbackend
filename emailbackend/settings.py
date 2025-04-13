@@ -17,10 +17,12 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 from dotenv import load_dotenv
 import os
-import dj_database_url
-DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
-}
+
+
+
+
+
+
 # Lade Umgebungsvariablen aus der .env-Datei
 load_dotenv()
 
@@ -36,10 +38,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-default-key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'meinbackend.railway.app',  # Deine Backend-URL von Railway
-    'https://WebMaster1321.github.io/meine-website',   # Deine Frontend-URL von GitHub
-]
+ALLOWED_HOSTS = ['.onrender.com']
 
 # CORS Einstellungen für die Verbindung mit dem Frontend
 INSTALLED_APPS = [
