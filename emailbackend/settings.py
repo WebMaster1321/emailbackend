@@ -40,7 +40,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'emailbackend-42a0.onrender.com',
-    'WebMaster1321.github.io',
+    'webmaster1321.github.io',
 ]
 
 # CORS Einstellungen für die Verbindung mit dem Frontend
@@ -68,10 +68,9 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # Falls dein Frontend auf Port 3000 läuft
+    "http://localhost:5173",
     "http://127.0.0.1:8000",
-    "https://WebMaster1321.github.io/meine-website",  # GitHub Pages Frontend-URL
-    "https://emailbackend-42a0.onrender.com",  # Dein Backend-URL
+    "https://webmaster1321.github.io",  # Genau diese Domain
 ]
 
 CORS_ALLOW_CREDENTIALS = True  # Falls du mit Authentifizierung arbeitest
