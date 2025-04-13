@@ -38,7 +38,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-default-key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.onrender.com']
+ALLOWED_HOSTS = ['https://emailbackend-42a0.onrender.com','https://WebMaster1321.github.io/meine-website/']
 
 # CORS Einstellungen für die Verbindung mit dem Frontend
 INSTALLED_APPS = [
@@ -67,6 +67,8 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Falls dein Frontend auf Port 3000 läuft
     "http://127.0.0.1:8000",
+    "https://WebMaster1321.github.io/meine-website",  # GitHub Pages Frontend-URL
+    "https://emailbackend-42a0.onrender.com",  # Dein Backend-URL
 ]
 
 CORS_ALLOW_CREDENTIALS = True  # Falls du mit Authentifizierung arbeitest
