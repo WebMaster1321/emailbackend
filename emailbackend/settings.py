@@ -39,9 +39,9 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-default-key')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'emailbackend-42a0.onrender.com',  # Hostname des Backends
-    'WebMaster1321.github.io',  # Frontend URL auf GitHub Pages
-],
+    'emailbackend-42a0.onrender.com',
+    'WebMaster1321.github.io',
+]
 
 # CORS Einstellungen für die Verbindung mit dem Frontend
 INSTALLED_APPS = [
